@@ -4,13 +4,17 @@
 }
 
 .divnav {
-    background-color: aqua;
+    background-color: rgb(4, 117, 117);
     padding: 20px;
 }
 
 .btn {
-    
-    
+    color: white;
+    background: rgb(29, 3, 63);
     padding: 20px
+}
+
+.btn:hover {
+    background: rgb(96, 6, 114);
 }
 
