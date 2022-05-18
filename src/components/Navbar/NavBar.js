@@ -1,4 +1,4 @@
-import './NavBar.css'
+import './NavBar.css';
 import { FaDollyFlatbed } from "react-icons/fa";
 
 const NavBar = () => {
