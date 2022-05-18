@@ -1,2 +1,13 @@
-import { FaDollyFlatbed } from "react-icons/fa";
-import './NavBar.css';
+import {FaShoppingCart} from 'react-icons/fa'
+
+const CartWidget = () => {
+    return (
+        <div>
+            <button className='btn'>
+                <FaShoppingCart/> 5
+            </button>
+        </div>
+    )
+}
+
+export default CartWidget 

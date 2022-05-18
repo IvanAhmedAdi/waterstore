@@ -11,10 +11,7 @@ function App() {
 
         <section className="itemlistconteiner">
 
-            <ItemListConteiner />
-            <ItemListConteiner />
-            <ItemListConteiner />
-            <ItemListConteiner />      
+            <ItemListConteiner greeting="Lista de catalogo"/>   
             
         </section>
     </div>

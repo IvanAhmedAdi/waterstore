@@ -1,13 +1,9 @@
 import React from "react";
 
-class ItemListConteiner extends React.Component {
 
-    render(){
-        return (
-            <h1>Catalogo</h1>
-        );
-    }
-
+const ItemListConteiner = (props) =>{
+    return <h1>
+        {props.greeting}
+    </h1>
 }
-
 export default ItemListConteiner;
