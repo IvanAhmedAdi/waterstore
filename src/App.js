@@ -1,10 +1,15 @@
 
 import './App.css';
 import NavBar from './components/Navbar/NavBar.js';
-
 import ItemListConteiner  from './components/ItemListConteiner';
+import ItemCount from './components/ItemCount';
+
+
 
 function App() {
+  
+  
+
   return (
     <div className="App">
         <NavBar />
@@ -14,6 +19,11 @@ function App() {
             <ItemListConteiner greeting="Lista de catalogo"/>   
             
         </section>
+
+        
+        <ItemCount />
+
+
     </div>
     
   );
