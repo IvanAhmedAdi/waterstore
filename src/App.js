@@ -1,32 +1,22 @@
-
+import React from 'react'
 import './App.css';
-import NavBar from './components/Navbar/NavBar.js';
-import ItemListConteiner  from './components/ItemListConteiner';
-import ItemCount from './components/ItemCount';
+import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from './components/ItemListConteiner/ItemListConteiner';
+import ItemCount from './components/ItemCount/ItemCount';
 
 
-
-function App() {
-  
-  
-
+const App = () => {
   return (
     <div className="App">
         <NavBar />
-
-        <section className="itemlistconteiner">
-
-            <ItemListConteiner greeting="Lista de catalogo"/>   
-            
+        <section>
+        <ItemListContainer greeting="Lista de Catalogo"/>
         </section>
-
-        
-        <ItemCount />
-
-
+        <ItemCount stock={10}/>
     </div>
-    
+
   );
 }
+
 
 export default App;
