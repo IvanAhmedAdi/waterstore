@@ -3,16 +3,18 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListConteiner/ItemListConteiner';
 import ItemCount from './components/ItemCount/ItemCount';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-const App = () => {
+function App() {
+  
   return (
     <div className="App">
-        <NavBar />
-        <section>
-        <ItemListContainer greeting="Lista de Catalogo"/>
-        </section>
-        <ItemCount stock={10}/>
+      <NavBar />
+      <section>
+        <ItemListContainer greeting="Lista de Catalogo" />
+      </section>
+      <ItemCount stock={10} />
     </div>
 
   );
