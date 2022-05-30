@@ -1,11 +1,8 @@
-import Item from '../Item/Item'
+import { Card } from 'react-bootstrap';
+import Item from '../Item/Item';
 
 const ItemList = ({products}) => {
-    return (
-        <div>
-            {products.map(prod => <Item key={prod.id} {...prod}/>)}
-        </div>
-    )
+    return <>{products.map((product) => <Item product={product} />)}</>
 }
 
-export default ItemList
+export default ItemList;

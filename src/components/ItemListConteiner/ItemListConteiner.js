@@ -13,7 +13,7 @@ const ItemListConteiner = ({ greeting }) => {
         })
     }, [])
    
-    console.log('antes de montar')
+    
 
     return(
         <div className='ItemListConteiner'>

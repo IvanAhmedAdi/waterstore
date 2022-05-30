@@ -1,19 +1,26 @@
 const products = [
     { 
         id: '1', 
-        name: 'iphone 13', 
+        name: 'iphone13', 
         price: 1000, 
         category: 'celular', 
-        img:'/public/images/iphone13.jpg', 
+        img: '/images/iphone13.png', 
         stock: 10, 
         description:'Descripcion de Iphone 13'
     },
-]
+];
 
 export const getProducts = () => {
-    return new Promise((resolve) => {
+    const ok = true;
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve(products)
+            if(ok){
+                resolve(products);
+            }else{
+                reject('Error');
+            }
+            
+            
         }, 2000)
     })
 }
